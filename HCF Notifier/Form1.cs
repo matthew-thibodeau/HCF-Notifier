@@ -11,6 +11,32 @@ namespace HCF_Notifier
 {
     public partial class Form1 : Form
     {
+        #region Properties and Variables
+        public int Minutes
+        {
+            get
+            {
+                return (int)minutes.Value;
+            }
+            set
+            {
+                minutes.Value = value;
+            }
+        }
+        public int Seconds
+        {
+            get
+            {
+                return (int)seconds.Value;
+            }
+            set
+            {
+                seconds.Value = value;
+            }
+        }
+        Timer timer = null;
+        #endregion
+
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +44,51 @@ namespace HCF_Notifier
 
         private void add_Click(object sender, EventArgs e)
         {
+            players.Items.Add(new ListViewItem(player.Text));
+        }
 
+        private void removePlayerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (players.SelectedItems.Count > 0)
+                players.SelectedItems[0].Remove();
+        }
+
+        private void seconds_ValueChanged(object sender, EventArgs e)
+        {
+            if (seconds.Value >= 60)
+            {
+                minutes.Value += seconds.Value / 60;
+                seconds.Value = seconds.Value % 60;
+            }
+        }
+
+        bool ticking = false;
+        private void start_Click(object sender, EventArgs e)
+        {
+            if (!ticking)
+            {
+                ticking = true;
+                timer.Interval = (Minutes * 60 + Seconds) * 1000;
+                timer.Tick += new EventHandler(timer_Tick);
+                timer.Start();
+                start.Text = "Stop Checking";
+            }
+            else if (ticking)
+            {
+                ticking = false;
+                timer.Stop();
+                start.Text = "Start Checking";
+            }
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            MessageBox.Show("tick...");
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer = new Timer();
         }
     }
 }
