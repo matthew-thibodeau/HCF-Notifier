@@ -46,6 +46,7 @@ namespace HCF_Notifier
         private void add_Click(object sender, EventArgs e)
         {
             players.Items.Add(new ListViewItem(player.Text));
+            player.Text = "";
         }
 
         private void removePlayerToolStripMenuItem_Click(object sender, EventArgs e)
@@ -102,7 +103,7 @@ namespace HCF_Notifier
             if (notifyPlayers.Length > 0)
             {
                 notifyPlayers = notifyPlayers.Substring(0, notifyPlayers.Length - 2);
-                notifyIcon1.ShowBalloonTip(4500, "Player is online!", "The players " + notifyPlayers + " are online.", ToolTipIcon.Warning);
+                notifyIcon1.ShowBalloonTip(4500, "Player is online!", "The players (" + notifyPlayers + ") are online.", ToolTipIcon.Warning);
             }
 
         }
@@ -112,9 +113,10 @@ namespace HCF_Notifier
             timer = new Timer();
         }
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void player_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+                add_Click(this, e);
         }
     }
 }
