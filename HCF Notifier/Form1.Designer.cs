@@ -54,12 +54,11 @@
             this.players.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.players.ContextMenuStrip = this.contextMenuStrip1;
-            this.players.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.players.FullRowSelect = true;
             this.players.GridLines = true;
             this.players.Location = new System.Drawing.Point(0, 259);
             this.players.Name = "players";
-            this.players.Size = new System.Drawing.Size(332, 108);
+            this.players.Size = new System.Drawing.Size(321, 108);
             this.players.TabIndex = 0;
             this.players.UseCompatibleStateImageBehavior = false;
             this.players.View = System.Windows.Forms.View.Details;
@@ -67,7 +66,7 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Players";
-            this.columnHeader1.Width = 200;
+            this.columnHeader1.Width = 317;
             // 
             // contextMenuStrip1
             // 
@@ -183,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 367);
+            this.ClientSize = new System.Drawing.Size(322, 367);
             this.Controls.Add(this.start);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.add);

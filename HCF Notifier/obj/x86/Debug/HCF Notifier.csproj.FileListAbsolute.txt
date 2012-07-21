@@ -7,3 +7,12 @@ C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\ob
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Debug\HCF Notifier.exe
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Debug\HCF Notifier.pdb
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\HCF Notifier.exe
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\HCF Notifier.pdb
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\bin\Debug\HCF Notifier.exe
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\bin\Debug\HCF Notifier.pdb
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\HCF_Notifier.Form1.resources
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\HCF_Notifier.Properties.Resources.resources
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Debug\GenerateResource.write.1.tlog

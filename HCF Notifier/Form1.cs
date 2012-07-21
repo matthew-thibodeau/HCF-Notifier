@@ -41,6 +41,7 @@ namespace HCF_Notifier
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void add_Click(object sender, EventArgs e)
@@ -110,7 +111,9 @@ namespace HCF_Notifier
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            players
             timer = new Timer();
+
         }
 
         private void player_KeyDown(object sender, KeyEventArgs e)

@@ -7,3 +7,12 @@ C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\ob
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Release\HCF Notifier.exe
 C:\Users\Matt\documents\visual studio 2010\Projects\HCF Notifier\HCF Notifier\obj\x86\Release\HCF Notifier.pdb
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\HCF_Notifier.Form1.resources
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\HCF_Notifier.Properties.Resources.resources
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\HCF Notifier.exe
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\bin\Release\HCF Notifier.exe
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\bin\Release\HCF Notifier.pdb
+C:\Users\Matt\Documents\Visual Studio 2010\Projects\HCF-Notifier\HCF Notifier\obj\x86\Release\HCF Notifier.pdb
