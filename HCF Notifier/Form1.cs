@@ -86,15 +86,25 @@ namespace HCF_Notifier
 
         void timer_Tick(object sender, EventArgs e)
         {
+            List<string> onlinePlayers = new List<string>();
             foreach (ListViewItem item in players.Items)
             {
                 string name = item.Text;
                 bool on = new WebClient().DownloadString("http://www.hcfactions.net/ajax/whosonline.php").Contains(name);
                 if (on)
                 {
-                    notifyIcon1.ShowBalloonTip(4500, "Player is online!", "The player " + name + " is online.", ToolTipIcon.Warning);
+                    onlinePlayers.Add(name);
                 }
             }
+            string notifyPlayers = "";
+            foreach (string str in onlinePlayers)
+                notifyPlayers += str + ", ";
+            if (notifyPlayers.Length > 0)
+            {
+                notifyPlayers = notifyPlayers.Substring(0, notifyPlayers.Length - 2);
+                notifyIcon1.ShowBalloonTip(4500, "Player is online!", "The players " + notifyPlayers + " are online.", ToolTipIcon.Warning);
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
