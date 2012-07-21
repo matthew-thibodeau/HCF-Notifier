@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.players = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -41,6 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.start = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.seconds)).BeginInit();
@@ -53,6 +55,7 @@
             this.columnHeader1});
             this.players.ContextMenuStrip = this.contextMenuStrip1;
             this.players.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.players.FullRowSelect = true;
             this.players.GridLines = true;
             this.players.Location = new System.Drawing.Point(0, 259);
             this.players.Name = "players";
@@ -168,6 +171,14 @@
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipTitle = "Player Online!";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +218,7 @@
         private System.Windows.Forms.NumericUpDown seconds;
         private System.Windows.Forms.NumericUpDown minutes;
         private System.Windows.Forms.Button start;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

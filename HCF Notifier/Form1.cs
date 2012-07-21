@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
 
 namespace HCF_Notifier
 {
@@ -67,6 +68,8 @@ namespace HCF_Notifier
         {
             if (!ticking)
             {
+                if (players.Items.Count == 0)
+                    return;
                 ticking = true;
                 timer.Interval = (Minutes * 60 + Seconds) * 1000;
                 timer.Tick += new EventHandler(timer_Tick);
@@ -83,12 +86,25 @@ namespace HCF_Notifier
 
         void timer_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("tick...");
+            foreach (ListViewItem item in players.Items)
+            {
+                string name = item.Text;
+                bool on = new WebClient().DownloadString("http://www.hcfactions.net/ajax/whosonline.php").Contains(name);
+                if (on)
+                {
+                    notifyIcon1.ShowBalloonTip(4500, "Player is online!", "The player " + name + " is online.", ToolTipIcon.Warning);
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer = new Timer();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
